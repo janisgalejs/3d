@@ -1,0 +1,33 @@
+#screen {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    perspective: 600px;
+    margin: 100px auto;
+    border: 1px solid #4e555b;
+    background: transparent;
+}
+
+#ob1 {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    transform-style: preserve-3d;
+    animation: spin 10s linear infinite;
+}
+.side {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(100,100,100,0.5);
+    border: 1px solid greenyellow;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.front {transform: translateZ(50px);}
+.top {transform: rotateX(90deg) translateZ(50px);}
+.right {transform: rotateY(90deg) translateZ(50px);}
+.left {transform: rotateY(-90deg) translateZ(50px);}
+.bottom {transform: rotateX(-90deg) translateZ(50px);}
+.back {transform: rotateY(-180deg) translateZ(50px);}

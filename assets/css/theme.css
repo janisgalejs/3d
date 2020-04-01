@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 14px;
+    background-color: #232525;
+    color: #bbbbbb;
+}
+
+.cl1 { color: #cb7731 }
+.cl2 { color: #5c7474 }
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#blinker {
+    display: inline-block;
+    width: 2px;
+    height: 16px;
+    background-color: #bbbbbb;
+    animation: blink 1s steps(2, start) infinite;
+}
+

@@ -1,0 +1,11 @@
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
