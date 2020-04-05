@@ -13,6 +13,11 @@ body {
     color: #bbbbbb;
 }
 
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
 .cl1 { color: #cb7731 }
 .cl2 { color: #5c7474 }
 
@@ -29,4 +34,18 @@ body {
     background-color: #bbbbbb;
     animation: blink 1s steps(2, start) infinite;
 }
+
+.screen-container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: 5em 0 0 5em;
+    float: left;
+}
+
+.screen-title {
+    text-align: center;
+}
+
+
 
