@@ -1,0 +1,91 @@
+#scene1 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    perspective: 400px;
+}
+
+.cube {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-100px);
+}
+
+.cube.spin {
+    animation: spinCube 8s infinite linear;
+}
+
+.cube .face {
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .6;
+    transition: opacity .5s;
+}
+
+.cube .face:hover {
+    opacity: 1;
+}
+
+.cube .face.front  { transform: rotateY(  0deg) translateZ(100px); }
+.cube .face.right  { transform: rotateY( 90deg) translateZ(100px); }
+.cube .face.back   { transform: rotateY(180deg) translateZ(100px); }
+.cube .face.left   { transform: rotateY(-90deg) translateZ(100px); }
+.cube .face.top    { transform: rotateX( 90deg) translateZ(100px); }
+.cube .face.bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+.cube .cocacola { background-image: url("/assets/images/cocacola.jpg") }
+.cube .donut { background-image: url("/assets/images/donut.jpg") }
+
+#scene2 {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin: 80px auto;
+    perspective: 600px;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.carousel__cell {
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    left: 0;
+    top: 0;
+    line-height: 116px;
+    font-size: 80px;
+    font-weight: bold;
+    color: #fff !important;
+    text-align: center;
+    text-decoration: none !important;
+    transition: all .5s;
+}
+
+.carousel__cell:nth-child(odd) { background: rgba(0, 255, 0, 0.8); }
+.carousel__cell:nth-child(even) { background: rgba(255, 0, 0, 0.8); }
+
+.carousel__cell:hover {
+    background: rgba(0, 0, 255, 1);
+}
+
+
+.carousel-options {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}

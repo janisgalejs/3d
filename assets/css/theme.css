@@ -35,17 +35,5 @@ canvas {
     animation: blink 1s steps(2, start) infinite;
 }
 
-.screen-container {
-    position: relative;
-    width: 600px;
-    height: 600px;
-    margin: 5em 0 0 5em;
-    float: left;
-}
-
-.screen-title {
-    text-align: center;
-}
-
 
 
